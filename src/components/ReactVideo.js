@@ -30,7 +30,7 @@ const ReactVideo = () => {
             onChange={handleYoutubeChange}
           />
           <button type="submit" className="btn btn-success bt-md">
-            UPLOAD
+            Watch
           </button>
         </form>
         <div className="youtube-box">
