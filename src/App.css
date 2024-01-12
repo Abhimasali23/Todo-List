@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  background: linear-gradient(to right bottom, #e1b382 #c89666);  
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.app-wrapper {
+  background-color: #F8F4EC;
+  margin-right: 40px;
+  min-width: 450px;
+  min-height: 650px;
+  padding: 30px;
+  box-sizing: border-box;
+  border: #7C81AD solid;
+  border-radius: 20px;
+  box-shadow: 3px 6px 40px #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.header {
+  color: black;
+  text-align: center;
+  margin: 30px 0;
+}
+
+
+
+.task-input {
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: black;
+  background-color: #F3F0CA;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.button-add {
+  width: 90px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #FFCD4B;
+  cursor: pointer;
+}
+
+.list-item {
+  display: flex;
+  margin-top: 20px;
+  border: 1px solid #071952;
+  border-radius: 10px;
+  padding: 5px;
+  max-height: 40px;
+}
+
+.button-complete,
+.button-delete {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  margin-top: -9px;
+  border-radius: 50%;
+}
+
+.button-complete {
+  color: rgb(56, 179, 56);  
+  margin-right: 20px;
+}
+
+.button-delete {
+  color: rgb(201, 73, 73);  
+}
+
+.complete {
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: #C70039;
+  opacity: 0.6;
+}
+
+.list {
+  width: 220px;
+  background-color: #F8F4EC;
+  border: none;
+  color: black;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 80px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+
+/* Video Player */
+
+.video-wrapper {  
+  width: 100%;
+  height: 100vh;  
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper .form {  
+  width: 80%;     
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.video-wrapper .youtube-box {
+  margin-top: 20px;  
+  width: 80%;
+  height: 350px;
+  background-color: #e4e4e4;
+}
+
+@media(max-width: 768px) {
+
+  .video-wrapper .form,
+  .video-wrapper .youtube-box {
+    width: 100%;
   }
 }
+
+.video-wrapper .youtube-box .video {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.error-msg {
+  width: 50%;
+  font-size: 14px;
+  font-weight: 600;
+  color: red;
+}
+
+@media(max-width: 768px) {
+  .error-msg {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
